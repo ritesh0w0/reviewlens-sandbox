@@ -12,3 +12,5 @@ export function getUserEmailDomain(user: UserAccount): string {
   // Bug: user.profile.email is accessed directly without checking if profile or email is defined
   return user.profile.email.split("@")[1];
 }
+
+// triggered live synchronize webhook
