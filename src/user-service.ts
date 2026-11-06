@@ -21,3 +21,4 @@ export function getUserDisplayName(user: UserRecord): string {
   return user.profile.details.displayName.trim();
 }
 // trigger synchronize event
+// trigger with accepted permissions
