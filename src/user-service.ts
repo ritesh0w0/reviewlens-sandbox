@@ -20,3 +20,4 @@ export function getUserDisplayName(user: UserRecord): string {
   // will throw a runtime TypeError if profile or details is undefined.
   return user.profile.details.displayName.trim();
 }
+// trigger synchronize event
