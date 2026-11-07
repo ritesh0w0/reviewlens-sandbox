@@ -1,0 +1,8 @@
+version: 1
+paths:
+  exclude:
+    - "node_modules/**"
+    - "dist/**"
+rules: []
+review:
+  max_inline_comments: 8
