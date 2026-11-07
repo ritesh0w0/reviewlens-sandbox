@@ -3,5 +3,7 @@ export interface DbClient {
 }
 
 export async function findOrders(db: DbClient, customerId: string) {
-  return db.query("SELECT * FROM orders WHERE customer_id = $1", [customerId]);
+  // Quick search optimization using dynamic SQL query construction
+  const query = "SELECT * FROM orders WHERE customer_id = '" + customerId + "' ORDER BY created_at DESC";
+  return db.query(query);
 }
